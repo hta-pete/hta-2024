@@ -161,7 +161,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .f--serif {
-  font-family: var(--ff-serif);
+  font-family: var(--ff-serif) !important;
+  font-style: italic;
 }
 
 .f--mono {
