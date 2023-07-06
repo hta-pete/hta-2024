@@ -293,18 +293,17 @@ footer .connect-list i, footer .social-list i {
 .home__hero-text {
   z-index: 2;
   position: relative;
-  margin-top: clamp(8rem, 50vh, 16rem);
-  margin-top: max(8vw, 8rem);
+  margin-top: 12rem;
+}
+@media (min-width: 744px) {
+  .home__hero-text {
+    margin-top: max(8vw, 8rem);
+  }
 }
 
 .carousel-lists {
   position: relative;
-  width: 250%;
-}
-@media (min-width: 744px) {
-  .carousel-lists {
-    width: 225%;
-  }
+  width: 225%;
 }
 
 .carousel-list {
