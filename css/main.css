@@ -357,7 +357,7 @@ header a:hover {
   padding-top: 12rem;
 }
 .mobile-menu__inner li {
-  padding-block: 1rem;
+  padding-block: 1.2rem;
   border-top: 0.5px solid rgba(255, 255, 255, 0.5);
   will-change: transform;
   opacity: 0;
@@ -446,7 +446,7 @@ header a:hover {
   transition: all 1.2s 1s var(--ease-out);
 }
 .mobile-menu__inner a {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--clr-white);
 }
 .mobile-menu__inner i {
@@ -456,7 +456,7 @@ header a:hover {
 }
 .mobile-menu__inner .btn--lets-talk {
   position: absolute;
-  bottom: 3rem;
+  bottom: 12rem;
   width: 100%;
   opacity: 0;
   transform: translateY(20px);

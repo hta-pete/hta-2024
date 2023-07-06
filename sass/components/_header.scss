@@ -83,7 +83,7 @@ header{
   height:100vh;
   padding-top:12rem;
   li{
-    padding-block:1rem;
+    padding-block:1.2rem;
     border-top:0.5px solid rgba(255,255,255,0.5);
     &:last-child{
       border-bottom:0.5px solid rgba(255,255,255,0.5);
@@ -98,7 +98,7 @@ header{
     }
   }
   a{
-    font-size:1.8rem;
+    font-size:2rem;
     color:var(--clr-white);
   }
   i{
@@ -108,7 +108,7 @@ header{
   }
   .btn--lets-talk{
     position:absolute;
-    bottom:3rem;
+    bottom:12rem;
     width:100%;
     opacity:0;
     transform:translateY(20px);
