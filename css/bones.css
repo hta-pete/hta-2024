@@ -122,7 +122,7 @@ html {
 }
 
 body {
-  font-family: var(--ff-sans-serif);
+  font-family: var(--ff-sans-serif) !important;
   font-size: var(--fs--base);
   line-height: 1.25;
   letter-spacing: -0.025em;
@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .f--sans-serif {
-  font-family: var(--ff-sans-serif);
+  font-family: var(--ff-sans-serif) !important;
 }
 
 .f--serif {

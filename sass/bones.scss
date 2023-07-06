@@ -82,7 +82,7 @@ html{
   font-size:62.5%;
 }
 body{
-  font-family:var(--ff-sans-serif);
+  font-family:var(--ff-sans-serif) !important;
   font-size:var(--fs--base);
   line-height:1.25;
   letter-spacing:-0.025em;
@@ -101,7 +101,7 @@ h1,h2,h3,h4,h5{
 .fs--4{font-size:var(--fs--sm);}
 .fs--5{font-size:var(--fs--xs);}
 // Font family
-.f--sans-serif{font-family:var(--ff-sans-serif);}
+.f--sans-serif{font-family:var(--ff-sans-serif) !important;}
 .f--serif{font-family:var(--ff-serif) !important; font-style:italic;}
 .f--mono{font-family:monospace;letter-spacing:0.08em;}
 // Font style
