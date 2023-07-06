@@ -1,0 +1,602 @@
+:root {
+  --clr-primary:#0f1c30;
+  --clr-white:#f6f6f6;
+  --clr-red:#cf3d3d;
+}
+
+[data-bg="dark"] {
+  --clr-theme:var(--clr-white);
+  --clr-theme-bg:var(--clr-primary);
+  --border-color:var(--clr-white);
+}
+
+[data-bg="light"] {
+  --clr-theme:var(--clr-primary);
+  --clr-theme-bg:var(--clr-white);
+  --border-color:var(--clr-primary);
+}
+
+body {
+  background-color: var(--clr-theme-bg);
+  color: var(--clr-theme);
+}
+
+.border--top {
+  border-top: 0.5px solid var(--border-color);
+}
+
+.absolute {
+  position: absolute;
+}
+
+.h--100 {
+  height: 100%;
+}
+
+.bottom--3 {
+  bottom: 3rem;
+}
+
+.bottom--6 {
+  bottom: 6rem;
+}
+
+.bottom--9 {
+  bottom: 9rem;
+}
+
+:root {
+  --ease-out:cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-in-out:cubic-bezier(1.000, 0.000, 0.000, 1.000);
+}
+
+.image-mask {
+  overflow: hidden;
+}
+
+[data-scroll] > * {
+  transform: translateY(60px);
+  opacity: 0;
+}
+[data-scroll] > * img {
+  transform: scale(1.5);
+}
+
+[data-scroll].is-inview > *:nth-child(1) {
+  animation: scrollIn 1.6s 0.1s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(1) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(2) {
+  animation: scrollIn 1.6s 0.2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(2) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(3) {
+  animation: scrollIn 1.6s 0.3s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(3) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(4) {
+  animation: scrollIn 1.6s 0.4s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(4) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(5) {
+  animation: scrollIn 1.6s 0.5s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(5) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(6) {
+  animation: scrollIn 1.6s 0.6s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(6) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(7) {
+  animation: scrollIn 1.6s 0.7s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(7) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(8) {
+  animation: scrollIn 1.6s 0.8s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(8) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(9) {
+  animation: scrollIn 1.6s 0.9s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(9) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(10) {
+  animation: scrollIn 1.6s 1s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(10) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(11) {
+  animation: scrollIn 1.6s 1.1s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(11) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(12) {
+  animation: scrollIn 1.6s 1.2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(12) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(13) {
+  animation: scrollIn 1.6s 1.3s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(13) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(14) {
+  animation: scrollIn 1.6s 1.4s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(14) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(15) {
+  animation: scrollIn 1.6s 1.5s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(15) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(16) {
+  animation: scrollIn 1.6s 1.6s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(16) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(17) {
+  animation: scrollIn 1.6s 1.7s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(17) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(18) {
+  animation: scrollIn 1.6s 1.8s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(18) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(19) {
+  animation: scrollIn 1.6s 1.9s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(19) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(20) {
+  animation: scrollIn 1.6s 2s var(--ease-out) forwards;
+}
+[data-scroll].is-inview > *:nth-child(20) img {
+  animation: photoIn 2s var(--ease-out) forwards;
+}
+
+@keyframes scrollIn {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes photoIn {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+header {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: var(--clr-theme-bg);
+  transition: all 0.8s var(--ease-out);
+}
+header .header__logo svg {
+  height: 4.8rem;
+  margin-top: 1.4rem;
+  fill: var(--clr-theme);
+}
+header .nav-links {
+  display: none;
+}
+@media (min-width: 744px) {
+  header .nav-links {
+    display: block;
+  }
+}
+header a {
+  color: var(--clr-theme);
+}
+header a:hover {
+  text-underline-offset: 0.12em;
+  text-decoration-thickness: 1px;
+  text-decoration-line: underline;
+  text-decoration-color: var(--clr-theme);
+}
+
+footer .connect-list i, footer .social-list i {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  width: 2.4rem;
+  margin-left: -0.35em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  text-align: center;
+  transition: all 0.6s var(--ease-out);
+}
+.btn--primary {
+  background: var(--clr-red);
+  color: white;
+}
+.btn--primary:hover {
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.btn--border {
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+}
+.btn--border-white {
+  border: 1px solid white;
+  color: white;
+}
+.btn--border-white:hover {
+  background: white;
+  color: var(--clr-primary);
+}
+
+.link {
+  display: inline-block;
+  cursor: pointer;
+}
+.link--underline {
+  color: var(--clr-theme);
+  text-underline-offset: 0.12em;
+  text-decoration-thickness: 1px;
+  text-decoration-line: underline;
+  text-decoration-color: var(--clr-theme);
+}
+.link--underline:hover {
+  text-decoration-color: #a0a0a0;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home__hero-text {
+  z-index: 2;
+  position: relative;
+  margin-top: clamp(8rem, 50vh, 16rem);
+  margin-top: max(8vw, 8rem);
+}
+
+.carousel-lists {
+  position: relative;
+  width: 225%;
+}
+
+.carousel-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  transition: transform 2.5s var(--ease-out);
+}
+.carousel-list:nth-child(2) {
+  margin-left: -15%;
+}
+.carousel-list .carousel-item {
+  position: relative;
+  display: block;
+  background: var(--clr-primary);
+  overflow: hidden;
+  will-change: transform;
+  transform: scale(0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  opacity: 0;
+}
+.carousel-list .carousel-item:nth-child(1) {
+  animation: photoGridIn 1s 0.1s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(1) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(2) {
+  animation: photoGridIn 1s 0.2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(2) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(3) {
+  animation: photoGridIn 1s 0.3s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(3) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(4) {
+  animation: photoGridIn 1s 0.4s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(4) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(5) {
+  animation: photoGridIn 1s 0.5s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(5) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(6) {
+  animation: photoGridIn 1s 0.6s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(6) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(7) {
+  animation: photoGridIn 1s 0.7s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(7) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(8) {
+  animation: photoGridIn 1s 0.8s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(8) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(9) {
+  animation: photoGridIn 1s 0.9s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(9) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(10) {
+  animation: photoGridIn 1s 1s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(10) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(11) {
+  animation: photoGridIn 1s 1.1s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(11) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(12) {
+  animation: photoGridIn 1s 1.2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(12) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(13) {
+  animation: photoGridIn 1s 1.3s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(13) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(14) {
+  animation: photoGridIn 1s 1.4s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(14) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(15) {
+  animation: photoGridIn 1s 1.5s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(15) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(16) {
+  animation: photoGridIn 1s 1.6s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(16) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(17) {
+  animation: photoGridIn 1s 1.7s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(17) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(18) {
+  animation: photoGridIn 1s 1.8s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(18) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(19) {
+  animation: photoGridIn 1s 1.9s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(19) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(20) {
+  animation: photoGridIn 1s 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(20) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(21) {
+  animation: photoGridIn 1s 2.1s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(21) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(22) {
+  animation: photoGridIn 1s 2.2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(22) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(23) {
+  animation: photoGridIn 1s 2.3s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(23) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(24) {
+  animation: photoGridIn 1s 2.4s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(24) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(25) {
+  animation: photoGridIn 1s 2.5s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(25) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(26) {
+  animation: photoGridIn 1s 2.6s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(26) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(27) {
+  animation: photoGridIn 1s 2.7s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(27) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(28) {
+  animation: photoGridIn 1s 2.8s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(28) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(29) {
+  animation: photoGridIn 1s 2.9s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(29) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(30) {
+  animation: photoGridIn 1s 3s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(30) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(31) {
+  animation: photoGridIn 1s 3.1s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(31) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(32) {
+  animation: photoGridIn 1s 3.2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(32) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(33) {
+  animation: photoGridIn 1s 3.3s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(33) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(34) {
+  animation: photoGridIn 1s 3.4s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(34) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(35) {
+  animation: photoGridIn 1s 3.5s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(35) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(36) {
+  animation: photoGridIn 1s 3.6s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(36) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(37) {
+  animation: photoGridIn 1s 3.7s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(37) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(38) {
+  animation: photoGridIn 1s 3.8s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(38) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(39) {
+  animation: photoGridIn 1s 3.9s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(39) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(40) {
+  animation: photoGridIn 1s 4s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item:nth-child(40) img {
+  animation: gridPhotoIn 2s var(--ease-out) forwards;
+}
+.carousel-list .carousel-item img {
+  display: block;
+  opacity: 0.8;
+  transform: scale(2);
+}
+.carousel-list .carousel-item__code {
+  z-index: 2;
+  position: absolute;
+  bottom: 0.7rem;
+  left: 1rem;
+  font-size: 1rem;
+  color: #ffc800;
+}
+
+@keyframes photoGridIn {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes gridPhotoIn {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

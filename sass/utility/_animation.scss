@@ -1,0 +1,53 @@
+:root{
+  --ease-out:cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-in-out:cubic-bezier(1.000, 0.000, 0.000, 1.000);
+}
+
+
+.image-mask{
+  overflow:hidden;
+}
+[data-scroll]{
+  > *{
+    transform:translateY(60px);
+    opacity:0;
+    img{
+      transform:scale(1.5);
+    }
+  }
+}
+[data-scroll]{
+  &.is-inview{
+    > *{
+      @for $i from 1 through 20 {
+        &:nth-child(#{$i}) {
+          animation: scrollIn 1.6s (0.1s * $i) var(--ease-out) forwards;
+          img{
+            animation: photoIn 2s var(--ease-out) forwards;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes scrollIn {
+  0%{
+    transform:translateY(60px);
+    opacity:0;
+  }
+  100%{
+    transform:translateY(0);
+    opacity:1;
+  }
+}
+@keyframes photoIn {
+  0%{
+    transform:scale(1.5);
+  }
+  100%{
+    transform:scale(1);
+  }
+}
+	

@@ -1,0 +1,89 @@
+.hero{
+	position:relative;
+	width:100%;
+  overflow:hidden;
+}
+.home__hero-text{
+  z-index:2;
+  position:relative;
+  margin-top:clamp(8rem, 50vh, 16rem); 
+  margin-top:max(8vw, 8rem); 
+}
+.carousel-lists{
+  position:relative;
+  width:225%;
+}
+.carousel-list{
+	width:100%;
+	display:grid;
+	grid-template-columns: repeat(10, 1fr);
+  gap:1rem;
+  margin-top:1rem;
+  will-change:transform;
+  transform:translate3d(0,0,0);
+	transition: transform 2.5s var(--ease-out);
+  &:nth-child(2){
+    margin-left:-15%;
+  }
+  .carousel-item{
+    position:relative;
+    display:block;
+    background:var(--clr-primary);
+    overflow:hidden;
+    will-change:transform;
+    transform:scale(0);
+    -webkit-transform:translate3d(0,0,0);
+    backface-visibility: hidden;
+    opacity:0;
+    @for $i from 1 through 40 {
+      &:nth-child(#{$i}) {
+        animation: photoGridIn 1s (0.1s * $i) var(--ease-out) forwards;
+        img{
+          animation: gridPhotoIn 2s var(--ease-out) forwards;
+        }
+      }
+    }
+    img{
+      display:block;
+      opacity:0.8;
+      transform:scale(2);
+    }
+  }
+  .carousel-item__code{
+    z-index:2;
+    position:absolute;
+    bottom:0.7rem;
+    left:1rem;
+    font-size:1rem;
+    color:rgb(255, 200, 0);
+    //color:var(--clr-white);
+  }
+}
+
+
+
+@keyframes photoGridIn {
+  0%{
+    transform:scale(0.6);
+    opacity:0;
+  }
+  100%{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+@keyframes gridPhotoIn {
+  0%{
+    transform:scale(2);
+  }
+  100%{
+    transform:scale(1);
+  }
+}
+	
+
+
+
+
+
+
