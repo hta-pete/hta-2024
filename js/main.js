@@ -1,29 +1,27 @@
-const $window        = window
-const header         = document.querySelector("header")
-const div            = document.querySelector('.hero');
-const cards          = div.querySelectorAll('.carousel-list');
-const menu           = document.querySelector('.mobile-menu');
-const menuBtn        = document.querySelector('.mobile-menu-btn');
+const $window = window
+const header  = document.querySelector("header")
+const div     = document.querySelector('.hero')
+const cards   = div.querySelectorAll('.carousel-list')
+const menu    = document.querySelector('.mobile-menu')
+const menuBtn = document.querySelector('.mobile-menu-btn')
 
 // —————————––––––––––––––––––
 // Scroll Stuff
 // —————————––––––––––––––––––
-let scrollPos = window.scrollY;
+let scrollPos = window.scrollY
 
 function scrollStuff(){
   let newScrollPos = window.scrollY
-  let $time     = cards.length;
-  let i         = 0; 
 
   if( newScrollPos > header.offsetHeight/2 )
     header.classList.add("active")
   else
     header.classList.remove("active")
   
-  scrollPos = newScrollPos;
+  scrollPos = newScrollPos
 
-  cards[0].style.transform = "translateX("+ -(scrollPos)*0.2 +"px"; 
-  cards[1].style.transform = "translateX("+ (scrollPos)*0.2 +"px"; 
+  cards[0].style.transform = "translateX("+ -(scrollPos)*0.2 +"px" 
+  cards[1].style.transform = "translateX("+ (scrollPos)*0.2 +"px" 
  
 }
 window.onscroll = (_.throttle(scrollStuff, 200))
