@@ -11,19 +11,28 @@
 }
 .carousel-lists{
   position:relative;
-  width:225%;
+  width:250%;
+  @media(min-width:744px){
+    width:225%;
+  }
 }
 .carousel-list{
 	width:100%;
 	display:grid;
-	grid-template-columns: repeat(10, 1fr);
+	grid-template-columns: repeat(6, 1fr);
+  @media(min-width:744px){
+    grid-template-columns: repeat(10, 1fr);
+  }
   gap:1rem;
   margin-top:1rem;
   will-change:transform;
   transform:translate3d(0,0,0);
 	transition: transform 2.5s var(--ease-out);
   &:nth-child(2){
-    margin-left:-15%;
+    margin-left:-42%;
+    @media(min-width:744px){
+      margin-left:-15%;
+    }
   }
   .carousel-item{
     position:relative;

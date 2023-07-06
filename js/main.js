@@ -19,9 +19,14 @@ function scrollStuff(){
     header.classList.remove("active")
   
   scrollPos = newScrollPos;
-  
-  cards[0].style.transform = "translateX("+ -(scrollPos)*0.2 +"px"; 
-  cards[1].style.transform = "translateX("+ (scrollPos)*0.2 +"px"; 
+
+  if( window.innerWidth >= 744 ){
+    cards[0].style.transform = "translateX("+ -(scrollPos)*0.2 +"px"; 
+    cards[1].style.transform = "translateX("+ (scrollPos)*0.2 +"px"; 
+  } else{
+    cards[0].style.transform = "translateX("+ -(scrollPos)*0.5 +"px"; 
+    cards[1].style.transform = "translateX("+ (scrollPos)*0.5 +"px"; 
+  }
   //cards[2].style.transform = "translate("+ -(scrollPos)*0.12 +"px"; 
 }
 window.onscroll = (_.throttle(scrollStuff, 200))
