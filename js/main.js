@@ -2,6 +2,8 @@ const $window        = window
 const header         = document.querySelector("header")
 const div            = document.querySelector('.hero');
 const cards          = div.querySelectorAll('.carousel-list');
+const menu           = document.querySelector('.mobile-menu');
+const menuBtn        = document.querySelector('.mobile-menu-btn');
 
 // —————————––––––––––––––––––
 // Scroll Stuff
@@ -42,4 +44,9 @@ const scrollObserver = new IntersectionObserver(
 scrollAnimations.forEach(function(section){
   scrollObserver.observe(section)
 })
+
+menuBtn.onclick = (e) => {
+  e.target.classList.toggle('active')
+  menu.classList.toggle('open')
+}
 

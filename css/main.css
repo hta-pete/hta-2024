@@ -211,6 +211,10 @@ header {
   background: var(--clr-theme-bg);
   transition: all 0.8s var(--ease-out);
 }
+header .header__logo {
+  z-index: 20;
+  position: relative;
+}
 header .header__logo svg {
   height: 4.8rem;
   margin-top: 1.4rem;
@@ -232,6 +236,231 @@ header a:hover {
   text-decoration-thickness: 1px;
   text-decoration-line: underline;
   text-decoration-color: var(--clr-theme);
+}
+
+.mobile-menu-btn {
+  z-index: 20;
+  position: relative;
+}
+.mobile-menu-btn:after {
+  content: "Menu";
+}
+.mobile-menu-btn.active:after {
+  content: "Close";
+}
+
+.mobile-menu {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  background: var(--clr-primary);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: opacity 0.8s var(--ease-out);
+}
+.mobile-menu.open {
+  transform: translateX(0);
+  opacity: 1;
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(4) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(5) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(6) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(7) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(8) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(9) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(10) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(11) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(12) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(13) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(14) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(15) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(16) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(17) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(18) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(19) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .mobile-menu__inner ul li:nth-child(20) {
+  opacity: 1;
+  transform: translateY(0);
+}
+.mobile-menu.open .btn--lets-talk {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile-menu__inner {
+  position: relative;
+  height: 100vh;
+  padding-top: 12rem;
+}
+.mobile-menu__inner li {
+  padding-block: 1rem;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+  will-change: transform;
+  opacity: 0;
+}
+.mobile-menu__inner li:last-child {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+.mobile-menu__inner li:nth-child(1) {
+  transform: translateY(20px);
+  transition: all 1.2s 0.05s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(2) {
+  transform: translateY(40px);
+  transition: all 1.2s 0.1s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(3) {
+  transform: translateY(60px);
+  transition: all 1.2s 0.15s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(4) {
+  transform: translateY(80px);
+  transition: all 1.2s 0.2s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(5) {
+  transform: translateY(100px);
+  transition: all 1.2s 0.25s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(6) {
+  transform: translateY(120px);
+  transition: all 1.2s 0.3s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(7) {
+  transform: translateY(140px);
+  transition: all 1.2s 0.35s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(8) {
+  transform: translateY(160px);
+  transition: all 1.2s 0.4s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(9) {
+  transform: translateY(180px);
+  transition: all 1.2s 0.45s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(10) {
+  transform: translateY(200px);
+  transition: all 1.2s 0.5s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(11) {
+  transform: translateY(220px);
+  transition: all 1.2s 0.55s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(12) {
+  transform: translateY(240px);
+  transition: all 1.2s 0.6s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(13) {
+  transform: translateY(260px);
+  transition: all 1.2s 0.65s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(14) {
+  transform: translateY(280px);
+  transition: all 1.2s 0.7s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(15) {
+  transform: translateY(300px);
+  transition: all 1.2s 0.75s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(16) {
+  transform: translateY(320px);
+  transition: all 1.2s 0.8s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(17) {
+  transform: translateY(340px);
+  transition: all 1.2s 0.85s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(18) {
+  transform: translateY(360px);
+  transition: all 1.2s 0.9s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(19) {
+  transform: translateY(380px);
+  transition: all 1.2s 0.95s var(--ease-out);
+}
+.mobile-menu__inner li:nth-child(20) {
+  transform: translateY(400px);
+  transition: all 1.2s 1s var(--ease-out);
+}
+.mobile-menu__inner a {
+  font-size: 1.8rem;
+  color: var(--clr-white);
+}
+.mobile-menu__inner i {
+  padding-right: 1rem;
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+.mobile-menu__inner .btn--lets-talk {
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1.2s 0.6s var(--ease-out);
 }
 
 footer .connect-list i, footer .social-list i {

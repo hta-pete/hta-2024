@@ -125,6 +125,12 @@ h1,h2,h3,h4,h5{
   --gap-sm:2.4rem;
   --gap-xs:1.8rem;
 }
+.hidden{
+  display:none;
+}
+@media(min-width: $sm){
+  .sm\:hidden{display:none;}
+}
 // ————————————————————————————
 // Container
 // ————————————————————————————
@@ -306,6 +312,9 @@ h1,h2,h3,h4,h5{
 }
 .justify--end{
   justify-content: end;
+}
+.justify--between{
+  justify-content: space-between;
 }
 @media (min-width: $sm) {
   .sm\:justify--start{justify-content: start;}

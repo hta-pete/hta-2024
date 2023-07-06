@@ -7,6 +7,8 @@ header{
   height:80px;
   background:var(--clr-theme-bg);
   .header__logo{
+    z-index:20;
+    position:relative;
     svg{
       height:4.8rem;
       margin-top:1.4rem;
@@ -32,5 +34,84 @@ header{
   &.active{
     //box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
     //background:var(--clr-primary);
+  }
+}
+
+.mobile-menu-btn{
+  z-index:20;
+  position:relative;
+  &:after{
+    content:"Menu";
+  }
+  &.active{
+    &:after{
+      content:"Close";
+    }
+  }
+}
+.mobile-menu{
+  z-index:10;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  overflow-y:scroll;
+  background:var(--clr-primary);
+  transform:translateX(100%);
+  opacity:0;
+  transition:opacity 0.8s var(--ease-out);
+  &.open{
+    transform:translateX(0);
+    opacity:1;
+    .mobile-menu__inner ul li{
+      @for $i from 1 through 20 {
+        &:nth-child(#{$i}) {
+          opacity:1;
+          transform:translateY(0);
+        }
+      }
+    }
+    .btn--lets-talk{
+      opacity:1;
+      transform:translateY(0);
+    }
+  }
+}
+.mobile-menu__inner{
+  position:relative;
+  height:100vh;
+  padding-top:12rem;
+  li{
+    padding-block:1rem;
+    border-top:0.5px solid rgba(255,255,255,0.5);
+    &:last-child{
+      border-bottom:0.5px solid rgba(255,255,255,0.5);
+    }
+    will-change: transform;
+    opacity:0;
+    @for $i from 1 through 20 {
+      &:nth-child(#{$i}) {
+        transform:translateY(20px * $i);
+        transition:all 1.2s (0.05s * $i) var(--ease-out);
+      }
+    }
+  }
+  a{
+    font-size:1.8rem;
+    color:var(--clr-white);
+  }
+  i{
+    padding-right:1rem;
+    font-size:1.2rem;
+    opacity:0.7;
+  }
+  .btn--lets-talk{
+    position:absolute;
+    bottom:3rem;
+    width:100%;
+    opacity:0;
+    transform:translateY(20px);
+    transition:all 1.2s 0.6s var(--ease-out);
   }
 }
