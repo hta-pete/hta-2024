@@ -1,7 +1,7 @@
 :root {
   --clr-primary:#0f1c30;
   --clr-white:#f6f6f6;
-  --clr-red:#cf3d3d;
+  --clr-red:#3977ff;
 }
 
 [data-bg="dark"] {
@@ -293,7 +293,7 @@ footer .connect-list i, footer .social-list i {
 .home__hero-text {
   z-index: 2;
   position: relative;
-  margin-top: 12rem;
+  margin-top: 15rem;
 }
 @media (min-width: 744px) {
   .home__hero-text {

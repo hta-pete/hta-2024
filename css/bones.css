@@ -73,7 +73,7 @@ meter {
   --ff-sans-serif:"Roboto", sans-serif;
   --ff-serif:"PT Serif", serif;
   --fs--base:1.6rem;
-  --fs--xl:3.6rem;
+  --fs--xl:3.8rem;
   --fs--lg:3rem;
   --fs--md:2.4rem;
   --fs--sm:2.2rem;
@@ -82,7 +82,7 @@ meter {
 @media (min-width: 744px) {
   :root {
     --fs--base:1.7rem;
-    --fs--xl:4rem;
+    --fs--xl:4.2rem;
     --fs--lg:3.4rem;
     --fs--md:2.6rem;
     --fs--sm:2.2rem;
