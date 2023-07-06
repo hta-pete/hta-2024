@@ -46,5 +46,6 @@ scrollAnimations.forEach(function(section){
 menuBtn.onclick = (e) => {
   e.target.classList.toggle('active')
   menu.classList.toggle('open')
+  document.body.classList.toggle('no-scroll')
 }
 

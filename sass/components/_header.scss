@@ -37,6 +37,10 @@ header{
   }
 }
 
+body.no-scroll{
+  overflow:hidden;
+}
+
 .mobile-menu-btn{
   z-index:20;
   position:relative;

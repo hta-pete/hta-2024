@@ -238,6 +238,10 @@ header a:hover {
   text-decoration-color: var(--clr-theme);
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .mobile-menu-btn {
   z-index: 20;
   position: relative;
