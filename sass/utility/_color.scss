@@ -7,7 +7,7 @@
 [data-bg="dark"]{
   --clr-theme:var(--clr-white);
   --clr-theme-bg:var(--clr-primary);
-  --border-color:var(--clr-white);
+  --border-color:rgba(255,255,255,0.7);
 }
 [data-bg="light"]{
   --clr-theme:var(--clr-primary);
