@@ -44,17 +44,41 @@ body.no-scroll{
 .mobile-menu-btn{
   z-index:20;
   position:relative;
-  padding:calc(0.75em - 1px) 1em;
-  text-align:center;
-  border:1px solid rgba(255,255,255,0.7);
-  border-radius:3px;
-  &:after{
-    content:"Menu";
+  width:20px;
+  height:14px;
+  span{
+    position:absolute;
+    display:block;
+    width:20px;
+    height:2px;
+    background:white;
+    transform:rotate(0);
+    transition:all 0.6s var(--ease-out);
+    &:nth-child(1){
+      top:0;
+    }
+    &:nth-child(2){
+      top:6px;
+    }
+    &:nth-child(3){
+      bottom:0;
+    }
   }
   &.active{
-    &:after{
-      content:"Close";
+    span{
+      &:nth-child(1){
+        top:6px;
+        transform:rotate(45deg);
+      }
+      &:nth-child(2){
+        opacity:0;
+      }
+      &:nth-child(3){
+        bottom:6px;
+        transform:rotate(-45deg);
+      }
     }
+
   }
 }
 .mobile-menu{
