@@ -314,11 +314,16 @@ footer .connect-list i, footer .social-list i {
   margin-top: 1rem;
   will-change: transform;
   transform: translate3d(0, 0, 0);
-  transition: transform 2.5s var(--ease-out);
+  transition: transform 1.6s var(--ease-out);
 }
 @media (min-width: 744px) {
   .carousel-list {
     grid-template-columns: repeat(10, 1fr);
+  }
+}
+@media (min-width: 744px) {
+  .carousel-list {
+    transition: transform 2.2s var(--ease-out);
   }
 }
 .carousel-list:nth-child(2) {
