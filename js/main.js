@@ -20,8 +20,10 @@ function scrollStuff(){
   
   scrollPos = newScrollPos
 
-  cards[0].style.transform = "translateX("+ -(scrollPos)*0.2 +"px" 
-  cards[1].style.transform = "translateX("+ (scrollPos)*0.2 +"px" 
+  cards[0].style.transform = "translateX("+ -(Math.round(scrollPos))*0.2 +"px" 
+  cards[1].style.transform = "translateX("+ (Math.round(scrollPos))*0.2 +"px" 
+
+  console.log(Math.round(scrollPos))
  
 }
 window.onscroll = (_.throttle(scrollStuff, 200))

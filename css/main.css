@@ -595,11 +595,11 @@ footer .connect-list i, footer .social-list i {
   }
 }
 .carousel-list:nth-child(2) {
-  margin-left: -42%;
+  margin-left: -41.5%;
 }
 @media (min-width: 744px) {
   .carousel-list:nth-child(2) {
-    margin-left: -15%;
+    margin-left: -14.6%;
   }
 }
 .carousel-list .carousel-item {
