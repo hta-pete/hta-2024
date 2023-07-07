@@ -84,7 +84,7 @@ html{
 body{
   font-family:var(--ff-sans-serif) !important;
   font-size:var(--fs--base);
-  line-height:1.25;
+  line-height:1.35;
   letter-spacing:-0.025em;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -92,7 +92,7 @@ body{
 h1,h2,h3,h4,h5{
   font-weight:inherit;
   letter-spacing:-0.05em;
-  line-height:1.1;
+  line-height:1.15;
 }
 // Font size
 .fs--1{font-size:var(--fs--xl);}

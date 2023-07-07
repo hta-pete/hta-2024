@@ -44,12 +44,12 @@ body.no-scroll{
 .mobile-menu-btn{
   z-index:20;
   position:relative;
-  width:20px;
+  width:24px;
   height:14px;
   span{
     position:absolute;
     display:block;
-    width:20px;
+    width:24px;
     height:2px;
     background:white;
     transform:rotate(0);
@@ -140,7 +140,7 @@ body.no-scroll{
   }
   .btn--lets-talk{
     position:absolute;
-    bottom:14rem;
+    bottom:15rem;
     width:100%;
     opacity:0;
     transform:translateY(20px);
