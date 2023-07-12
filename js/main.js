@@ -1,3 +1,13 @@
+gsap.registerPlugin(ScrollTrigger);
+
+const lenis = new Lenis()
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
+
 const $window = window
 const header  = document.querySelector("header")
 const div     = document.querySelector('.hero')
@@ -5,28 +15,6 @@ const cards   = div.querySelectorAll('.carousel-list')
 const menu    = document.querySelector('.mobile-menu')
 const menuBtn = document.querySelector('.mobile-menu-btn')
 
-// —————————––––––––––––––––––
-// Scroll Stuff
-// —————————––––––––––––––––––
-let scrollPos = window.scrollY
-
-function scrollStuff(){
-  let newScrollPos = window.scrollY
-
-  if( newScrollPos > header.offsetHeight/2 )
-    header.classList.add("active")
-  else
-    header.classList.remove("active")
-  
-  scrollPos = newScrollPos
-
-  cards[0].style.transform = "translateX("+ -(Math.round(scrollPos))*0.2 +"px" 
-  cards[1].style.transform = "translateX("+ (Math.round(scrollPos))*0.2 +"px" 
-
-  console.log(Math.round(scrollPos))
- 
-}
-window.onscroll = (_.throttle(scrollStuff, 200))
 
 // —————————––––––––––––––––––
 // Scroll Animations
@@ -50,4 +38,34 @@ menuBtn.onclick = () => {
   menu.classList.toggle('open')
   document.body.classList.toggle('no-scroll')
 }
+
+
+/*--------------------
+Hero Image Gallery
+--------------------*/
+let slideGap      = 10
+let slideWidth    = document.querySelector('.hero__gallery-slides-item').offsetWidth
+let slides        = gsap.utils.toArray('.hero__gallery-slides-item')
+let slidesReverse = gsap.utils.toArray('.hero__gallery-slides-item--reverse')
+
+/* set slides */
+gsap.set([slides, slidesReverse], {
+  //paddingRight: 10,
+})
+
+/* animate slides */
+gsap.to(slides, {
+  xPercent: -50 * (slides.length - 1),
+  scrollTrigger: {
+    ease: 'none',
+    scrub: true
+  }
+})
+gsap.to(slidesReverse, {
+  xPercent: 50 * (slidesReverse.length - 1),
+  scrollTrigger: {
+    ease: 'none',
+    scrub: true
+  }
+})
 
