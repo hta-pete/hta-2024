@@ -55,14 +55,14 @@ gsap.set([slides, slidesReverse], {
 
 /* animate slides */
 gsap.to(slides, {
-  xPercent: -50 * (slides.length - 1),
+  xPercent: window.innerWidth < 744 ?  -60 * (slides.length - 1) : -25 * (slides.length - 1),
   scrollTrigger: {
     ease: 'none',
     scrub: true
   }
 })
 gsap.to(slidesReverse, {
-  xPercent: 50 * (slidesReverse.length - 1),
+  xPercent: window.innerWidth < 744 ?  60 * (slidesReverse.length - 1) : 25 * (slidesReverse.length - 1),
   scrollTrigger: {
     ease: 'none',
     scrub: true
